@@ -16,7 +16,7 @@ import java.awt.*;
 
 
 
-public class IBravo extends BravoBot {
+public class IBravo extends AlphaBot {
 	int turnDirection = 1; // Clockwise or counterclockwise
 
 	SuperTracker tr;
