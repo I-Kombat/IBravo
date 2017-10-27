@@ -4,15 +4,14 @@ import robocode.ScannedRobotEvent;
 import robocode.WinEvent;
 import static robocode.util.Utils.normalRelativeAngleDegrees;
 
+import robocode.AdvancedRobot;
 import robocode.BravoBot;
-import robocode.AlphaBot;
 import robocode.BulletHitEvent;
 import robocode.HitRobotEvent;
 import robocode.HitWallEvent;
 import robocode.util.*;
 
-import java.awt.*; 
- 
+import java.awt.*;
 
 
 
@@ -33,8 +32,9 @@ public class IBravo extends BravoBot {
 	 * onScannedRobot:  We have a target.  Go get it.
 	 */
 	public void onScannedRobot(ScannedRobotEvent e) {
-
+		
 		tr.onScannedRobot(e);
+		throw new NullPointerException();
 	}
 
 	/**
@@ -139,4 +139,5 @@ public class IBravo extends BravoBot {
 		}
 
 	}
-}
+} 
+
