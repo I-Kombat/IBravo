@@ -5,7 +5,7 @@ import robocode.WinEvent;
 import static robocode.util.Utils.normalRelativeAngleDegrees;
 
 import robocode.AdvancedRobot;
-import robocode.BravoBot;
+import robocode.AlphaBot;
 import robocode.BulletHitEvent;
 import robocode.HitRobotEvent;
 import robocode.HitWallEvent;
