@@ -2,6 +2,7 @@ import robocode.Robot;
 import robocode.ScannedRobotEvent;
 import robocode.WinEvent;
 import static robocode.util.Utils.normalRelativeAngleDegrees;
+import robocode.BravoBot;
 
 import java.awt.*;
 
