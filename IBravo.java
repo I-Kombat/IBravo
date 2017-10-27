@@ -7,7 +7,7 @@ import java.awt.*;
 
 
 
-public class IBravo extends Robot {
+public class IBravo extends BravoBot {
 
 
 	public void run() {
@@ -24,7 +24,7 @@ public class IBravo extends Robot {
 		}
 	}
 
-	public void onRobotDetected(ScannedRobotEvent e) {
+	public void onRobotScanned(ScannedRobotEvent e) {
 		// Calculate exact location of the robot
 		double absoluteBearing = getHeading() + e.getBearing();
 		double bearingFromGun = normalRelativeAngleDegrees(absoluteBearing - getGunHeading());
