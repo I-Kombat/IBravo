@@ -1,6 +1,3 @@
-package sample;
-
-
 import robocode.Robot;
 import robocode.ScannedRobotEvent;
 import robocode.WinEvent;
@@ -9,19 +6,10 @@ import static robocode.util.Utils.normalRelativeAngleDegrees;
 import java.awt.*;
 
 
-/**
- * TrackFire - a sample robot by Mathew Nelson.
- * <p>
- * Sits still. Tracks and fires at the nearest robot it sees.
- *
- * @author Mathew A. Nelson (original)
- * @author Flemming N. Larsen (contributor)
- */
+
 public class IBravo extends Robot {
 
-	/**
-	 * TrackFire's run method
-	 */
+
 	public void run() {
 		// Set colors
 		setBodyColor(Color.pink);
@@ -36,9 +24,6 @@ public class IBravo extends Robot {
 		}
 	}
 
-	/**
-	 * onScannedRobot:  We have a target.  Go get it.
-	 */
 	public void onRobotDetected(ScannedRobotEvent e) {
 		// Calculate exact location of the robot
 		double absoluteBearing = getHeading() + e.getBearing();
